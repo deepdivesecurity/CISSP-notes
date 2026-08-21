@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the README table of contents from repository Notes.md files."""
+"""Generate the README table of contents from files in CISSP domain directories."""
 
 from __future__ import annotations
 
@@ -10,30 +10,41 @@ REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
 README_PATH = REPOSITORY_ROOT / "README.md"
 START_MARKER = "<!-- Table of Contents Start -->"
 STOP_MARKER = "<!-- Table of Contents Stop -->"
-NOTE_FILENAME = "Notes.md"
-EXCLUDED_DIRECTORIES = {".git", ".github", "scripts"}
+DOMAIN_DIRECTORY_PREFIX = "domain_"
 
 
-def display_name(notes_path: Path) -> str:
-    """Turn a notes directory name into a readable TOC label."""
-    return notes_path.parent.name.replace("_", " ").replace("-", " ").title()
+def display_name(path: Path | str) -> str:
+    """Turn a path component into a readable TOC label."""
+    return Path(path).stem.replace("_", " ").replace("-", " ").title()
 
 
-def find_notes() -> list[Path]:
-    """Return all Notes.md files that should appear in the root TOC."""
-    notes = []
-    for path in REPOSITORY_ROOT.rglob(NOTE_FILENAME):
-        relative_path = path.relative_to(REPOSITORY_ROOT)
-        if any(part in EXCLUDED_DIRECTORIES for part in relative_path.parts[:-1]):
+def find_domain_files() -> dict[Path, list[Path]]:
+    """Return every file under each top-level domain directory."""
+    domain_files = {}
+    for domain_directory in REPOSITORY_ROOT.iterdir():
+        if not (
+            domain_directory.is_dir()
+            and domain_directory.name.startswith(DOMAIN_DIRECTORY_PREFIX)
+        ):
             continue
-        notes.append(relative_path)
-    return sorted(notes, key=lambda path: str(path).lower())
+
+        files = sorted(
+            (path.relative_to(REPOSITORY_ROOT) for path in domain_directory.rglob("*") if path.is_file()),
+            key=lambda path: str(path).lower(),
+        )
+        if files:
+            domain_files[domain_directory.relative_to(REPOSITORY_ROOT)] = files
+    return domain_files
 
 
 def build_toc() -> str:
-    entries = [
-        f"- [{display_name(path)}]({path.as_posix()})" for path in find_notes()
-    ]
+    entries = []
+    for domain, files in find_domain_files().items():
+        entries.append(f"- {display_name(domain)}")
+        for path in files:
+            relative_to_domain = path.relative_to(domain)
+            label = " / ".join(display_name(part) for part in relative_to_domain.parts)
+            entries.append(f"  - [{label}]({path.as_posix()})")
     return "## Table of Contents\n\n" + "\n".join(entries)
 
 
