@@ -16,3 +16,39 @@
     - Setting policies and procedures to accomplish the tasks required of those plans
     - Monitoring, measuring, and assessing success, progress, risk, error, and efficiency in all activities conducted by the organization and its people
     - Reporting to regulators, investors, other stakeholders, and the public as required by law and ethics
+- Organizations adopt control frameworks to provide a governance program that is: 
+    - Consistent
+    - Measureable
+    - Standardized
+    - Comprehensive
+    - Modular
+- Control Framework Standards
+    - ISO 27000 and 27001: Terminology
+    - ISO 27002: Catalog of security controls
+    - ISO 27003: ISMS implementation guidance
+    - ISO 27005: Risk management
+    - Statement of Applicability: Contains justifications for inclusions and exclusions of ISO 27002 controls
+    - COBIT
+        - COBIT 4.1 has 4 Domains
+            - Planning and organizing
+            - Acquisition and implementation
+            - Delivery and support
+            - Monitoring
+        - COBIT 5 has management processes
+    - NIST & FIPS
+        - FIPS is a requirement
+        - SP is a guideline that may assist with meeting a requirement
+        - FIPS 199 - Standards for security categorization of federal information and information systems
+        - FIPS 200 - Minimum security requirements for federal information and information system
+        - NIST SP 800-53 - Security and privacy controls for federal information systems and organizations
+        - NIST SP 800-59 - Guidelines for identifying an information system as a national security system
+        - NIST SP 800-60 - Guide for mapping types of information and information systems to security categories
+        - NIST SP 800-37 - Guide for applying the risk management framework to federal information systems: A security lifecycle
+        - NIST SP 800-39 - Managing information security risk: organization, mission, and information system view
+        - NIST SP 800-30 - Guide for conducting risk assessments
+        - NIST SP 800-64 - Security considerations in the system development lifecycle
+    - PCI DSS
+    - PA DSS
+    - PCI PIN
+    - FedRAMP
+    - SABSA
