@@ -9,3 +9,15 @@
 - Explain how transborder data flow applies to privacy.
 
 ## Notes
+
+### GAPP Principles
+1. Management
+2. Notice
+3. Choice and Consent
+4. Collection
+5. Use, Retention, and Disposal
+6. Access
+7. Disclosure to 3rd Parties
+8. Security
+9. Quality
+10. Monitoring and Enforcement
