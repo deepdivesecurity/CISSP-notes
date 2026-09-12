@@ -9,20 +9,14 @@
     - Acquisition
     - Merger
     - Divestiture
-- Due care & due diligence
-    - Establishing and prioritizing goals and objectives
-    - Determining strategies and plans to achieve these goals and objectives
-    - Aligning resources with these plans and programs
-    - Setting policies and procedures to accomplish the tasks required of those plans
-    - Monitoring, measuring, and assessing success, progress, risk, error, and efficiency in all activities conducted by the organization and its people
-    - Reporting to regulators, investors, other stakeholders, and the public as required by law and ethics
-- Organizations adopt control frameworks to provide a governance program that is: 
-    - Consistent
-    - Measureable
-    - Standardized
-    - Comprehensive
-    - Modular
-- Control Framework Standards
+
+### Control Framework Standards
+    - Organizations adopt control frameworks to provide a governance program that is: 
+        - Consistent
+        - Measureable
+        - Standardized
+        - Comprehensive
+        - Modular
     - ISO 27000 and 27001: Terminology
     - ISO 27002: Catalog of security controls
     - ISO 27003: ISMS implementation guidance
@@ -52,3 +46,34 @@
     - PCI PIN
     - FedRAMP
     - SABSA
+        - | Feature | Advantage |
+          | Business-driven | Value-assure |
+          | Risk and opportunity balanced | Risk and opportunity balanced |
+          | Comprehensive | Scalable scope |
+          | Modular | Agility for ease of implementation and management |
+          | Open source | Free use, open source, global standard |
+          | Auditable | Demonstrates compliance to relevant authorities |
+          | Transparent | Two-way traceability |
+
+### Due care & due diligence
+#### Due Care
+    - Requires a person to take all reasonable and prudent actions to plan and carry out any task or responsibility assigned to them.
+        - Includes all aspects of the life cycle of that task or responsibility
+    - Found in control loops
+    - Legal concept: The effort made by a prudent party to avoid harm to another party while maintaining the other party's expectations
+#### Due Diligence
+    - Requires that measures be taken to monitor, control, manage, and assess the successful accomplishment and continued applicability of due care.
+        - Includes being aware of and monitoring the surrounding business, physical, or social environment for possible new risks or threats.
+    - "Constant vigilance"
+     
+### Control Loops
+    1. A feedback loop that measures the current state of the system and directs changes to it to meet required conditions
+    2. A logic model or decision element that determines the actions to take based on present and past states of the system
+    3. A feedback loop with a higher-level or outer control loop that controls this control, from which it receives input directions or commands and to which it provides measurements of the current state of the control plus the system it is controlling
+
+### Policies
+    - Can be written at many levels: 
+        - High-level governance policies
+        - Functional areas (e.g. HR)
+        - Compliance regimes
+    - For a policy to be effective as a directive, it must be linked to an enforcement mechanism
