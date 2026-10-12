@@ -10,7 +10,7 @@
         <li>CISSP Official Study Questions</li>
       </ul>
     <li><a href="https://www.linkedin.com/learning/isc2-certified-information-systems-security-professional-cissp-2024-cert-prep">Mike Chapple: ISC2 Certified Information Systems Security Professional (CISSP)</a></li>
-    <li><a href="https://destcert.com/cissp/guidebook/" target="_blank">Destination CISSP - A Concise Guide</a></li>
+    <li><a href="https://destcert.com/cissp/guidebook/" target="_blank">Destination CISSP - A Concise Guide <img src="https://img.shields.io/badge/Completed 1st Readthrough Oct 12-B32624?style=flat" alt="Completed Readthrough Oct 12"></a></li>
       <ul>
         <li><a href="https://www.youtube.com/playlist?list=PLZKdGEfEyJhLd-pJhAD7dNbJyUgpqI4pu">Destination CISSP MindMaps</a></li>
       </ul>
