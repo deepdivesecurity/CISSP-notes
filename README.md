@@ -19,6 +19,9 @@
         <li><a href="https://www.youtube.com/playlist?list=PLZKdGEfEyJhLd-pJhAD7dNbJyUgpqI4pu">Destination CISSP MindMaps</a></li>
       </ul>
     <li><a href="https://www.learnzapp.com/apps/isc2/cissp/">LearnZapp - CISSP <img src="https://img.shields.io/badge/Premium-B32624?style=flat" alt="LearnZapp CISSP Premium"></a></li>
+      <ul>
+        <li>545 answered / 2253 total questions</li>
+      </ul>
     <li><a href="https://quantumexams.com/pricing.html">Quantum Exams CISSP Test Prep with CAT</a></li>
       <ul>
         <li><img src="https://img.shields.io/badge/1st Non CAT Practice Exam Score: 58-B32624?style=flat" alt="Non-CAT Exam Score 58"></li>
