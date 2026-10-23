@@ -1,5 +1,8 @@
 # CISSP Notes
 
+> [!NOTE]  
+> The notes found in this repo are specific to my learning requirements and may not be comprehensive or complete.
+
 <!-- Study Resources Start -->
 ## Study Resources
 <li>🌱 &nbsp;I’m currently studying for the <strong>CISSP</strong> using the following: </li>
