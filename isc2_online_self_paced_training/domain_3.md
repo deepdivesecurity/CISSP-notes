@@ -1,4 +1,4 @@
-# CISSP - Domain 3
+# CISSP - Domain 3: Security Architecture & Engineering
 
 ## Key Management
 - Kerchkhoff’s Principle - Everything must remain secure even if it’s public knowledge - only small secret remains private

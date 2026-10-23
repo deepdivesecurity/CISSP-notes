@@ -1,4 +1,4 @@
-# CISSP - Domain 2
+# CISSP - Domain 2: Asset Security
 
 ## Data Roles
 ### Data Owner/Controller

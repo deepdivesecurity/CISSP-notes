@@ -1,4 +1,4 @@
-# CISSP - Domain 4
+# CISSP - Domain 4: Communication & Network Security
 
 ## OSI Model
 - Application
