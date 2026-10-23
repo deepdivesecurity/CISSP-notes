@@ -7,24 +7,24 @@
 ## Fail Securely
 - Fail open: Preserves availability of systems
 - Fail closed: Preserves security of systems
-Clipping level: Locking accounts after a set number of failed attempts
+- Clipping level: Locking accounts after a set number of failed attempts
 
 ## Encryption
 FIPS 197 - Approved AES for use
 
 ## Certificate Authority
-3rd-party who verifies identities of entities
-- Registration Authority performs this function
-Signs a certificate which it issues with its own private key
-Certificate includes the entity information + their public key
-Parties can then use the CA’s public key to verify validity of the certificate
-Validation authority validates that a certificate is still valid or revoked
+- 3rd-party who verifies identities of entities
+    - Registration Authority performs this function
+- Signs a certificate which it issues with its own private key
+- Certificate includes the entity information + their public key
+- Parties can then use the CA’s public key to verify validity of the certificate
+- Validation authority validates that a certificate is still valid or revoked
 
 ## Number of Encryption Keys Necessary
-Calculate number of symmetrical keys needed: 
-- N(N-1)/2 where N is the number of users
-Calculate number of asymmetrical keys needed: 
-- N*2
+- Calculate number of symmetrical keys needed: 
+    - N(N-1)/2 where N is the number of users
+- Calculate number of asymmetrical keys needed: 
+    - N*2
 
 ## Kerberos
 - KDC: Key Distribution Center
@@ -55,7 +55,7 @@ Calculate number of asymmetrical keys needed:
 - Programmable logic controllers (PLC)
     - Specialized code device that can react in realtime
 
-Crime Prevention Through Environmental Design (CPTED)
+- Crime Prevention Through Environmental Design (CPTED)
 
 ## Handling Fires
 
@@ -128,9 +128,9 @@ Crime Prevention Through Environmental Design (CPTED)
     - Delete subjects
 
 ## Hashes
-Hash of Variable Length (HAVAL)
-- 3-5 rounds
-- 1024bit input blocks
+- Hash of Variable Length (HAVAL)
+    - 3-5 rounds
+    - 1024bit input blocks
 
 ### Cloud Computing
 - ISO 17789 adds NaaS in addition to NIST pillars
