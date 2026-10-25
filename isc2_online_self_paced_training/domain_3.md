@@ -4,7 +4,7 @@
 - Kerchkhoff’s Principle - Everything must remain secure even if it’s public knowledge - only small secret remains private
 - Key escrow: Storing keys with a trusted 3rd-party
 
-## Fail Securely
+## System Failing
 - Fail open: Preserves availability of systems
 - Fail closed/Fail secure: Preserves security of systems
 - Clipping level: Locking accounts after a set number of failed attempts
