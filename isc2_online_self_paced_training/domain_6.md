@@ -76,3 +76,63 @@
         - Disaster simulated while prod activities are ongoing
     - Full Cutover
         - Disaster is invoked affected prod
+
+## Testing
+- Acceptance testing
+    - Determines if app meets acceptance criteria and can be released
+- Regression testing
+    - Ensures changes to codebase do not negatively impact existing functionality of app
+- Misuse case testing
+- Negative tests
+    - Provide evidence of app behaviour if unexpected or invalid data
+    - Fuzzing
+- Positive tests
+    - Determines a system works as expected
+
+## Penetration Testing Process
+- Chartering
+    - Rules of Engagement
+- Discovery
+- Scanning
+    - Fingerprinting
+- Exploitation
+- Reporting
+
+## Types of Reporting
+- Full disclosure
+- Responsible disclosure
+- Mandatory reporting
+- Whistleblowing
+
+## SOC Reports
+- SOC 1: Financial
+    - SOC 1 Type 1
+        - Audits performance of set of controls at a particular point in time
+    - SOC 1 Type 2
+        - Reports on performance of controls over a specified period of time
+- SOC 2: Security
+    - Trust Services Criteria Principles
+        - Security
+        - Availability
+        - Confidentiality
+        - Processing Integrity
+        - Privacy
+    - SOC 2 Type 1
+        - Verifies design of controls at the time of report
+    - SOC 2 Type 2
+        - Assesses control effectivity over a specified period of time
+- SOC 3: Summary of SOC 2 report
+- SOC for Cybersecurity
+
+## Structural Coverage Types
+- Statement coverage
+- Decision (branch) coverage
+- Condition coverage
+- Multi-condition coverage
+- Loop coverage
+- Correspondence between data and field types
+- Data flow coverage
+- Populating required fields
+- Path coverage
+- Allowed number of characters
+- Allowed data bounds and limits
