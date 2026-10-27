@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the README table of contents from files in CISSP domain directories."""
+"""Generate the README table of contents from Markdown notes in source directories."""
 
 from __future__ import annotations
 
@@ -10,41 +10,61 @@ REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
 README_PATH = REPOSITORY_ROOT / "README.md"
 START_MARKER = "<!-- Table of Contents Start -->"
 STOP_MARKER = "<!-- Table of Contents Stop -->"
-DOMAIN_DIRECTORY_PREFIX = "domain_"
 
 
 def display_name(path: Path | str) -> str:
     """Turn a path component into a readable TOC label."""
-    return Path(path).stem.replace("_", " ").replace("-", " ").title()
+    words = Path(path).stem.replace("_", " ").replace("-", " ").title().split()
+    acronyms = {"Cissp": "CISSP", "Isc2": "ISC2", "Linkedin": "LinkedIn"}
+    return " ".join(acronyms.get(word, word) for word in words)
 
 
-def find_domain_files() -> dict[Path, list[Path]]:
-    """Return every file under each top-level domain directory."""
-    domain_files = {}
-    for domain_directory in REPOSITORY_ROOT.iterdir():
-        if not (
-            domain_directory.is_dir()
-            and domain_directory.name.startswith(DOMAIN_DIRECTORY_PREFIX)
-        ):
+def find_source_files() -> dict[Path, list[Path]]:
+    """Return Markdown notes grouped by their top-level source directory."""
+    source_files = {}
+    for source_directory in sorted(
+        REPOSITORY_ROOT.iterdir(), key=lambda path: path.name.lower()
+    ):
+        if not source_directory.is_dir() or source_directory.name.startswith("."):
             continue
 
         files = sorted(
-            (path.relative_to(REPOSITORY_ROOT) for path in domain_directory.rglob("*") if path.is_file()),
+            (
+                path.relative_to(REPOSITORY_ROOT)
+                for path in source_directory.rglob("*.md")
+                if path.is_file()
+                and not any(
+                    part.startswith(".")
+                    for part in path.relative_to(source_directory).parts
+                )
+            ),
             key=lambda path: str(path).lower(),
         )
         if files:
-            domain_files[domain_directory.relative_to(REPOSITORY_ROOT)] = files
-    return domain_files
+            source_files[source_directory.relative_to(REPOSITORY_ROOT)] = files
+    return source_files
 
 
 def build_toc() -> str:
     entries = []
-    for domain, files in find_domain_files().items():
-        entries.append(f"- {display_name(domain)}")
+    for source, files in find_source_files().items():
+        entries.append(f"- {display_name(source)}")
+        rendered_directories = set()
         for path in files:
-            relative_to_domain = path.relative_to(domain)
-            label = " / ".join(display_name(part) for part in relative_to_domain.parts)
-            entries.append(f"  - [{label}]({path.as_posix()})")
+            relative_to_source = path.relative_to(source)
+            directories = relative_to_source.parts[:-1]
+            for index in range(len(directories)):
+                directory = Path(*directories[: index + 1])
+                if directory in rendered_directories:
+                    continue
+                rendered_directories.add(directory)
+                indent = "  " * (index + 1)
+                entries.append(f"{indent}- {display_name(directories[index])}")
+
+            indent = "  " * (len(directories) + 1)
+            entries.append(
+                f"{indent}- [{display_name(relative_to_source.name)}]({path.as_posix()})"
+            )
     return "## Table of Contents\n\n" + "\n".join(entries)
 
 
