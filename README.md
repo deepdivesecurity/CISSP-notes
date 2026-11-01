@@ -54,6 +54,7 @@
   - [Domain 5](isc2_online_self_paced_training/domain_5.md)
   - [Domain 6](isc2_online_self_paced_training/domain_6.md)
   - [Domain 7](isc2_online_self_paced_training/domain_7.md)
+  - [Domain 8](isc2_online_self_paced_training/domain_8.md)
   - [Processes And Steps](isc2_online_self_paced_training/processes_and_steps.md)
 - LinkedIn Mike Chapple
   - Domain 1 Security And Risk Management
