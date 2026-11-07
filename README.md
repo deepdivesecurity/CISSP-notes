@@ -30,6 +30,7 @@
     <li><a href="https://quantumexams.com/pricing.html">Quantum Exams CISSP Test Prep with CAT</a></li>
       <ul>
         <li><img src="https://img.shields.io/badge/1st CAT Practice Exam Score: 707-B32624?style=flat" alt="First CAT Exam Score: 707"></li>
+        <li><img src="https://img.shields.io/badge/2nd CAT Practice Exam Score: 831-B32624?style=flat" alt="Second CAT Exam Score: 831"></li>
         <li><img src="https://img.shields.io/badge/1st Non CAT Practice Exam Score: 58-B32624?style=flat" alt="First Non-CAT Exam Score: 58"></li>
       </ul>
     <li><a href="https://youtu.be/_nyZhYnCNLA">CISSP Exam Cram</a></li>
