@@ -49,6 +49,9 @@
     - [1 2 Understand And Apply Security Concepts](destination_cissp/domain_1_security_and_risk_management/1_2_understand_and_apply_security_concepts.md)
     - [1 3 Evaluate And Apply Security Governance Principles](destination_cissp/domain_1_security_and_risk_management/1_3_evaluate_and_apply_security_governance_principles.md)
     - [1 4 Understand Legal Regulatory And Compliance Issues That Pertain To Information Security In A Holistic Context](destination_cissp/domain_1_security_and_risk_management/1_4_understand_legal_regulatory_and_compliance_issues_that_pertain_to_information_security_in_a_holistic_context.md)
+- Extra
+  - [Kerberos](extra/kerberos.md)
+  - [Mnemonics And Chunking](extra/mnemonics_and_chunking.md)
 - ISC2 Online Self Paced Training
   - [Domain 2](isc2_online_self_paced_training/domain_2.md)
   - [Domain 3](isc2_online_self_paced_training/domain_3.md)
