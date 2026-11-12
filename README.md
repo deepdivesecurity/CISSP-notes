@@ -1,7 +1,9 @@
 # CISSP Notes
 
 > [!NOTE]  
+> I formally passed the CISSP and am no longer updating this repository.
 > The notes found in this repo are specific to my learning requirements and may not be comprehensive or complete.
+
 
 <!-- Study Resources Start -->
 ## Study Resources
